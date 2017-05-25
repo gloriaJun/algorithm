@@ -1,4 +1,4 @@
-package src.com.study.tryhelloworld.level2;
+package src.com.study.tryhelloworld.level4;
 
 /**
  * O와 X로 채워진 표가 있습니다. 표 1칸은 1 x 1 의 정사각형으로 이루어져 있습니다.
