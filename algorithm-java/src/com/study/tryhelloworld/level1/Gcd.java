@@ -17,15 +17,15 @@ import java.util.Arrays;
  * */
 public class Gcd {
 
-    public int gcd (int a, int b) {
+    public long gcd (long a, long b) {
         if (a < b) {
-            int tmp = a;
+            long tmp = a;
             a = b;
             b = tmp;
         }
 
         while(true) {
-            int tmp = a % b;
+            long tmp = a % b;
             if (tmp == 0)
                 break;
             b = tmp;
@@ -35,8 +35,8 @@ public class Gcd {
 
     }
 
-    public int[] gcdlcm(int a, int b) {
-        int[] answer = new int[2];
+    public long[] gcdlcm(long a, long b) {
+        long[] answer = new long[2];
         answer[0] = gcd(a, b);
         answer[1] = (a*b) / answer[0];
 
@@ -46,7 +46,7 @@ public class Gcd {
     // 아래는 테스트로 출력해 보기 위한 코드입니다.
     public static void main(String[] args) {
         Gcd c = new Gcd();
-        System.out.println(Arrays.toString(c.gcdlcm(3, 12)));
+        System.out.println(Arrays.toString(c.gcdlcm(3095983144L, 144L)));
 //        System.out.println(c.gcd(60, 48));
     }
 }
