@@ -1,6 +1,5 @@
 package src.com.study.tryhelloworld.level2;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 /**
@@ -15,7 +14,7 @@ import java.util.Arrays;
  수열의 길이만큼 반복하여 최솟값 10을 얻을 수 있으며, 이 10이 최솟값이 됩니다.
  수열 A,B가 주어질 때, 최솟값을 반환해주는 getMinSum 함수를 완성하세요.
  */
-public class TryHelloWorld {
+public class getMinSum {
     public int getMinSum(int []A, int []B)
     {
         int answer = 0;
@@ -32,7 +31,7 @@ public class TryHelloWorld {
     }
     public static void main(String[] args)
     {
-        TryHelloWorld test = new TryHelloWorld();
+        getMinSum test = new getMinSum();
         int []A = {1,2, 9};
         int []B = {3,4, 2};
         System.out.println(test.getMinSum(A,B));

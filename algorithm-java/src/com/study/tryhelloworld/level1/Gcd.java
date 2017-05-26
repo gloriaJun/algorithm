@@ -15,7 +15,7 @@ import java.util.Arrays;
  *  : (a*b) / 최대 공약수
  *
  * */
-public class TryHelloWorld {
+public class Gcd {
 
     public int gcd (int a, int b) {
         if (a < b) {
@@ -45,7 +45,7 @@ public class TryHelloWorld {
 
     // 아래는 테스트로 출력해 보기 위한 코드입니다.
     public static void main(String[] args) {
-        TryHelloWorld c = new TryHelloWorld();
+        Gcd c = new Gcd();
         System.out.println(Arrays.toString(c.gcdlcm(3, 12)));
 //        System.out.println(c.gcd(60, 48));
     }
