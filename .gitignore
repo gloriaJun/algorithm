@@ -1,5 +1,6 @@
 #ide
 *.iml
+.idea/
 
 # output
 out/
