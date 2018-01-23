@@ -1,4 +1,4 @@
-package com.study.tryhelloworld.level1;
+package src.com.study.tryhelloworld.level1;
 
 /**
  * question
