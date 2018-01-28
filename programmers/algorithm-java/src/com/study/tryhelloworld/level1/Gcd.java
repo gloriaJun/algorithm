@@ -46,7 +46,16 @@ public class Gcd {
     // 아래는 테스트로 출력해 보기 위한 코드입니다.
     public static void main(String[] args) {
         Gcd c = new Gcd();
-        System.out.println(Arrays.toString(c.gcdlcm(3095983144L, 144L)));
+//        System.out.println(Arrays.toString(c.gcdlcm(3095983144L, 144L)));
 //        System.out.println(c.gcd(60, 48));
+        System.out.println(Arrays.toString(c.gcdlcm(2, 6)));
+        System.out.println(Arrays.toString(c.gcdlcm(978, 1212)));
+        System.out.println(Arrays.toString(c.gcdlcm(26, 398)));
+        System.out.println(5174/26);
+        System.out.println(5174/398);
+        System.out.println(Arrays.toString(c.gcdlcm(148, 176)));
+        System.out.println(3256/148.);
+        System.out.println(3256/176.);
+//        System.out.println(Arrays.toString(c.gcdlcm(2, 5)));
     }
 }
