@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<script>
+ // JSON 형태의 단일 링크드 리스트가 있다. 헤드를 인자로 넘기면 리스트를 뒤집어서 리턴하는 reverseLinkedList 함수를 만든다.
+
+  var list = {
+    head: {
+      value: "A",
+      next: {
+        value: "B",
+        next: {
+          value: "C",
+          next: {
+            value: "D",
+            next: {
+              value: "E",
+              next: null
+            }
+          }
+        }
+      }
+    }
+  };
+
+  function reverseLinkedList(head) {
+    // 이곳을 채우세요
+    let prev = null;
+    let cur = { ...head };
+
+    let i = 0;
+    while(!!cur.next) {
+      let temp = cur;
+      cur = temp.next;
+      cur.next = prev;
+      prev = temp.next;
+      i++;
+      if (i === 2) break;
+
+      // if (!cur.next || cur.next === null) {
+      //   break;
+      // }
+    }
+
+    return cur;
+  }
+
+  console.log( JSON.stringify( reverseLinkedList(list.head) ) )
+  // output: {"value":"E","next":{"value":"D","next":{"value":"C","next":{"value":"B","next":{"value":"A","next":null}}}}}
+</script>
+</body>
+</html>
