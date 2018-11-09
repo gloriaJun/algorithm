@@ -30,24 +30,21 @@
 
   function reverseLinkedList(head) {
     // 이곳을 채우세요
+    let cur = {...head};
     let prev = null;
-    let cur = { ...head };
 
-    let i = 0;
-    while(!!cur.next) {
-      let temp = cur;
-      cur = temp.next;
+    while(cur) {
+      let temp = cur.next;
+      // 현재 객체에 이전 객체를 연결
       cur.next = prev;
-      prev = temp.next;
-      i++;
-      if (i === 2) break;
-
-      // if (!cur.next || cur.next === null) {
-      //   break;
-      // }
+      // 다음 리스트에 연결해줄 객체에 현재 객체를 저장
+      prev = cur;
+      // 다음에 체크할 객체
+      cur = temp;
     }
 
-    return cur;
+    // 헤드를 변경한다.
+    return prev;
   }
 
   console.log( JSON.stringify( reverseLinkedList(list.head) ) )
