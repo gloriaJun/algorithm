@@ -6,16 +6,12 @@ function sort(arr) {
 
   for (let i = 1; i < len; i++) {
     const key = arr[i];
-    let keyIdx = i;
-    for (let j = i-1 ; j >= 0; j--) {
-      if (arr[keyIdx] < arr[j]) {
-        const temp = arr[j];
-        arr[j] = arr[keyIdx];
-        arr[keyIdx] = temp;
-        keyIdx = j;
-      }
+    let j = i-1;
+    for (; j >= 0 && key < arr[j]; j--) {
+      arr[j+1] = arr[j];
     }
-    console.log(i, `key: ${key}`, arr);
+    arr[j+1] = key;
+    console.log(i, j, `key: ${key}`, arr);
   }
   return arr;
 }
