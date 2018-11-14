@@ -1,6 +1,4 @@
-
 'use strict';
-let count = 0;
 
 function insertionSort(list, first, last, gap) {
   for (let i = first+gap; i < last; i += gap) {

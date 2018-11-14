@@ -1,6 +1,4 @@
-
 'use strict';
-let count = 0;
 
 function sort(arr) {
   const len = arr.length;
